@@ -1,0 +1,132 @@
+.single-slider {
+  padding-top: 166px;
+
+  @media (max-width: 992px) {
+    padding-top: 120px;
+  }
+
+  @media (max-width: 768px) {
+    padding-top: 100px;
+  }
+
+  @media (max-width: 576px) {
+    padding-top: 80px;
+  }
+
+  &__top-box {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+    @media (max-width: 768px) {
+      display: block;
+    }
+  }
+
+  &__bottom {
+    margin-bottom: 55px;
+  }
+
+  &__bottom-list {
+    .slick-track {
+      display: flex;
+      justify-content: space-between;
+    }
+    .slick-slide {
+      margin-right: 5px;
+
+      &.slick-current {
+        .single-slider__bottom-img {
+          border: 2px solid $accent;
+        }
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &__bottom-img {
+    width: 143px;
+    height: 80px;
+    object-fit: cover;
+    border: 2px solid #6f7a8b;
+    cursor: pointer;
+  }
+}
+
+.project-address {
+  font-size: 14px;
+  font-weight: 700;
+  color: #989da5;
+  padding-left: 23px;
+  position: relative;
+  margin-bottom: 10px;
+  @include text-limit;
+  -webkit-line-clamp: 1;
+  display: inline-block;
+
+  &--map {
+    font-weight: 400;
+    font-size: 15px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url(../images/ico/mapmarker.svg);
+    width: 12px;
+    height: 16px;
+    left: 0;
+    top: 1px;
+  }
+}
+
+.breadcrumbs {
+  display: flex;
+
+  @media (max-width: 768px) {
+    margin-bottom: 20px;
+  }
+
+  &__item {
+    margin-right: 5px;
+    padding-right: 12px;
+    position: relative;
+
+    &::after {
+      content: ">";
+      position: absolute;
+      right: 0;
+      top: 0;
+      color: #ccc;
+    }
+
+    &:last-child::after {
+      display: none;
+      margin-right: 0;
+      padding-right: 0;
+    }
+
+    &:last-child {
+      width: 250px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+
+      .breadcrumbs__link {
+        color: #888;
+        font-weight: 700;
+        pointer-events: none;
+      }
+    }
+  }
+
+  &__link {
+    font-weight: 600;
+    line-height: 1.15;
+    color: #ccc;
+    transition: 0.5s;
+  }
+}

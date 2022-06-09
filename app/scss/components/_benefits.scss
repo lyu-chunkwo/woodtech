@@ -1,0 +1,148 @@
+.benefits {
+  padding-top: 166px;
+  margin-bottom: 55px;
+
+  @media (max-width: 992px) {
+    padding-top: 120px;
+  }
+
+  @media (max-width: 768px) {
+    padding-top: 100px;
+    margin-bottom: 0;
+  }
+
+  @media (max-width: 576px) {
+    padding-top: 80px;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  &__content {
+    max-width: 800px;
+
+    @media (max-width: 1200px) {
+      max-width: 100%;
+    }
+  }
+
+  &__title {
+    font-size: 30px;
+    text-transform: none;
+    font-weight: 800;
+    margin-bottom: 50px;
+
+    @media (max-width: 768px) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+    text-align: center;
+  }
+
+  &__item {
+    width: 253px;
+    min-height: 345px;
+    margin: 0 10px 20px;
+    padding: 65px 0 40px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 6px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    &--eco::before {
+      width: 58px;
+      height: 49px;
+      background-image: url(../images/ico/eco-accent.svg);
+    }
+
+    &--wood::before {
+      width: 40px;
+      height: 40px;
+      background-image: url(../images/ico/wood-accent.svg);
+    }
+
+    &--team::before {
+      width: 55px;
+      height: 36px;
+      background-image: url(../images/ico/team.svg);
+    }
+
+    &--tools::before {
+      width: 42px;
+      height: 42px;
+      background-image: url(../images/ico/design-tools.svg);
+    }
+
+    &--mat::before {
+      width: 42px;
+      height: 42px;
+      background-image: url(../images/ico/mat.svg);
+    }
+
+    &--auto::before {
+      width: 69px;
+      height: 31px;
+      background-image: url(../images/ico/auto.svg);
+    }
+
+    &--border {
+      border-bottom: 1px solid $light-div;
+    }
+  }
+
+  &__link-box {
+    color: $text;
+
+    &:hover {
+      .benefits__link,
+      .benefits__item-title {
+        color: $accent;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__text-box {
+    margin-bottom: 20px;
+  }
+
+  &__item-title {
+    font-size: 19px;
+    font-weight: 800;
+    line-height: 1.15;
+    width: 200px;
+    margin: 0 auto 20px;
+    transition: color 0.5s;
+  }
+
+  &__text {
+    font-size: 13px;
+    line-height: 1.7;
+  }
+
+  &__link {
+    color: $text;
+    font-size: 15px;
+    font-weight: 800;
+    line-height: 1.75;
+    text-decoration: underline;
+    transition: color 0.5s;
+  }
+}

@@ -1,0 +1,300 @@
+$accent: #f88500;
+$text: #333333;
+$dark: #202328;
+$dark-header: #6f7a8b;
+$dark-div: #2d3038;
+$light-bg: #fafafa;
+$light-disabled: #e4e6e8;
+$light-div: #e7e7e8;
+$text-light: #999999;
+
+@function max($numbers...) {
+  @return m#{a}x(#{$numbers});
+}
+@function min($numbers...) {
+  @return m#{i}n(#{$numbers});
+}
+
+@mixin text-limit {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 3;
+
+  // !вставка микасина в код (для примера)
+  // @include text-limit;
+  -webkit-line-clamp: 3;
+}
+
+@mixin line {
+  border-top: 1px solid $border-light;
+  position: relative;
+  padding-top: 35px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 305px;
+    height: 2px;
+    background-color: $accent;
+    right: 0;
+    top: -2px;
+  }
+}
+
+@mixin line-l {
+  border-top: 1px solid $border-light;
+  position: relative;
+  padding-top: 35px;
+  padding-bottom: 50px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 305px;
+    height: 2px;
+    background-color: $accent;
+    left: 0;
+    top: -2px;
+  }
+}
+
+@mixin state {
+  &:after {
+    content: "";
+    background-color: $header-accent;
+    position: absolute;
+    width: 0;
+    height: 2px;
+    transition: width 0.3s linear;
+  }
+
+  &:after {
+    top: 100%;
+    left: 0;
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
+
+  &:focus {
+    border: 1px dashed $active;
+  }
+
+  &:active {
+    color: $active;
+  }
+}
+
+%checbox-hidden,
+%radio-hidden {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  position: absolute;
+}
+
+%raleway-300 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+}
+
+%raleway-400 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+}
+
+%raleway-500 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+}
+
+%raleway-600 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+}
+
+%raleway-700 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+}
+
+%raleway-800 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+}
+
+%raleway-900 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+}
+
+%roboto-300 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+%roboto-500 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+
+%roboto-700 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
+
+// %ukrainianbrush-400 {
+//   font-family: "Ukrainianbrush", sans-serif;
+//   font-weight: 400;
+// }
+
+// %montserrat-400 {
+//   font-family: "Montserrat", sans-serif;
+//   font-weight: 400;
+// }
+
+// %ptsans-400 {
+//   font-family: "PTSans", sans-serif;
+//   font-weight: 400;
+// }
+
+// %oswald-400 {
+//   font-family: "Oswald", sans-serif;
+//   font-weight: 400;
+// }
+
+// %transform {
+//   transform: translateX(-50%) translateY(-50%);
+// }
+
+// %shadow {
+//   box-shadow: 0 0 10px rgba(36, 63, 77, 0.5);
+// }
+
+// %dmsans-400 {
+// 	font-family: "DMSans", sans-serif;
+// 	font-weight: 400;
+// }
+
+// %dmsans-500 {
+// 	font-family: "DMSans", sans-serif;
+// 	font-weight: 500;
+// }
+
+// %dmsans-700 {
+// 	font-family: "DMSans", sans-serif;
+// 	font-weight: 700;
+// }
+
+// %rubik-300 {
+// 	font-family: "Rubik", sans-serif;
+// 	font-weight: 300;
+// }
+
+// %rubik-400 {
+// 	font-family: "Rubik", sans-serif;
+// 	font-weight: 400;
+// }
+
+// %rubik-500 {
+// 	font-family: "Rubik", sans-serif;
+// 	font-weight: 500;
+// }
+
+// %poppins-700 {
+// 	font-family: "Poppins", sans-serif;
+// 	font-weight: 700;
+// }
+
+// %rubik-700 {
+// 	font-family: "Rubik", sans-serif;
+// 	font-weight: 700;
+// }
+
+// %nunito-700 {
+// 	font-family: "Nunito", sans-serif;
+// 	font-weight: 700;
+// }
+
+// %gilroy-200 {
+// 	font-family: "Gilroy", sans-serif;
+// 	font-weight: 200;
+// }
+
+// %gilroy-400 {
+// 	font-family: "Gilroy", sans-serif;
+// 	font-weight: 400;
+// }
+
+// %gilroy-500 {
+// 	font-family: "Gilroy", sans-serif;
+// 	font-weight: 500;
+// }
+
+// %gilroy-600 {
+// 	font-family: "Gilroy", sans-serif;
+// 	font-weight: 600;
+// }
+
+// %gilroy-700 {
+// 	font-family: "Gilroy", sans-serif;
+// 	font-weight: 700;
+// }
+
+// %gilroy-800 {
+// 	font-family: "Gilroy", sans-serif;
+// 	font-weight: 800;
+// }
+
+// %commissioner-300 {
+// 	font-family: "Commissioner", sans-serif;
+// 	font-weight: 300;
+// }
+
+// %commissioner-400 {
+// 	font-family: "Commissioner", sans-serif;
+// 	font-weight: 400;
+// }
+
+// %commissioner-500 {
+// 	font-family: "Commissioner", sans-serif;
+// 	font-weight: 500;
+// }
+
+// %commissioner-600 {
+// 	font-family: "Commissioner", sans-serif;
+// 	font-weight: 600;
+// }
+
+// %circe-100 {
+//   font-family: "Circe", sans-serif;
+//   font-weight: 100;
+// }
+
+// %circe-200 {
+//   font-family: "Circe", sans-serif;
+//   font-weight: 200;
+// }
+
+// %circe-300 {
+//   font-family: "Circe", sans-serif;
+//   font-weight: 300;
+// }
+
+// %circe-400 {
+//   font-family: "Circe", sans-serif;
+//   font-weight: 400;
+// }
+
+// %circe-700 {
+//   font-family: "Circe", sans-serif;
+//   font-weight: 700;
+// }
+
+// %circe-800 {
+//   font-family: "Circe", sans-serif;
+//   font-weight: 800;
+// }

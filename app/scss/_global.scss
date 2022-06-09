@@ -1,0 +1,300 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  @extend %raleway-400;
+  color: $text;
+  font-size: 14px;
+  font-weight: 400;
+  min-height: 100%;
+
+  // ! Выключает скролл при адаптивном меню
+  @media (max-width: 948px) {
+    &.lock {
+      overflow: hidden;
+    }
+  }
+}
+
+.main {
+  flex-grow: 1;
+}
+
+.container-wide {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.container {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.title {
+  @extend %raleway-400;
+  font-weight: 800;
+  font-size: 29px;
+}
+
+.page-title {
+  @extend %raleway-400;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 1.16;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+input {
+  &:active,
+  &:focus {
+    outline: transparent;
+  }
+}
+
+button {
+  &:active,
+  &:focus {
+    outline: transparent;
+  }
+}
+
+.btn {
+  background-color: $accent;
+  color: #fff;
+  padding: 12px;
+  font-weight: 800;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  border: 1px solid $accent;
+  border-radius: 0 5px 0 5px;
+  transition: background-color 0.5s, color 0.5s;
+
+  &:hover {
+    background-color: #fff;
+    color: $accent;
+  }
+}
+
+// ! Скрывает заголовки и т.д. для СЕО
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.pagination {
+  max-width: 320px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 70px;
+
+  &__arrow {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.2;
+    color: #c4c4c4;
+  }
+
+  &__arrow-prev {
+    margin-right: 20px;
+    padding-left: 20px;
+    position: relative;
+
+    @media (max-width: 480px) {
+      padding-left: 0;
+    }
+
+    &:hover {
+      color: #c4c4c4;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      left: 0;
+      top: 4px;
+      background-image: url(../images/ico/arrow-prev.svg);
+
+      @media (max-width: 480px) {
+        display: none;
+      }
+    }
+  }
+
+  &__list {
+    display: flex;
+    margin-right: 20px;
+  }
+
+  &__item {
+    margin-right: 10px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__link {
+    font-size: 15px;
+    line-height: 1.2;
+    @extend %roboto-500;
+    color: #666666;
+    padding: 10px 15px;
+    border-radius: 0 5px;
+
+    &.active {
+      background-color: $accent;
+      color: #fff;
+    }
+  }
+
+  &__arrow-next {
+    padding-right: 20px;
+    color: $accent;
+    position: relative;
+
+    @media (max-width: 480px) {
+      padding-right: 0;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+    }
+
+    &::before {
+      width: 100%;
+      height: 1px;
+      background-color: $accent;
+      left: 0;
+      bottom: 0;
+    }
+
+    &::after {
+      width: 10px;
+      height: 10px;
+      right: 0;
+      top: 4px;
+      background-image: url(../images/ico/arrow-next.svg);
+
+      @media (max-width: 480px) {
+        display: none;
+      }
+    }
+
+    &:hover {
+      color: $accent;
+    }
+  }
+}
+
+.aside-menu {
+  width: 265px;
+  margin-right: 20px;
+  padding: 40px 0;
+  background-color: $light-bg;
+  position: relative;
+  z-index: 5;
+
+  @media (max-width: 1200px) {
+    left: -350px;
+    top: 200px;
+    margin-right: 0;
+    position: absolute;
+    transition: left 0.5s;
+
+    &.active {
+      left: -15px;
+    }
+  }
+
+  &__top {
+    @media (max-width: 1200px) {
+    }
+  }
+
+  &__close {
+    display: none;
+
+    @media (max-width: 1200px) {
+      display: block;
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      z-index: 5;
+      color: $text;
+      font-size: 20px;
+
+      &.active {
+        .aside-menu {
+          left: -350px;
+        }
+      }
+    }
+  }
+
+  &__aside-title {
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 25px;
+    padding-left: 30px;
+    text-transform: uppercase;
+  }
+
+  &__item {
+    padding: 5px 0;
+    transition: background-color 0.5s;
+    margin-bottom: 3px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &:hover {
+      background-color: $accent;
+
+      .aside-menu__link {
+        color: #fff;
+      }
+    }
+
+    &.current {
+      background-color: $accent;
+
+      .aside-menu__link {
+        color: #fff;
+      }
+    }
+  }
+
+  &__link {
+    font-weight: 500;
+    line-height: 1.15;
+    color: #666;
+    padding: 5px 0 5px 30px;
+    transition: color 0.5s;
+    display: block;
+  }
+}

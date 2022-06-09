@@ -1,0 +1,332 @@
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/raleway-300.woff2") format("woff2"), url("../fonts/raleway-300.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/raleway-400.woff2") format("woff2"), url("../fonts/raleway-400.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/raleway-500.woff2") format("woff2"), url("../fonts/raleway-500.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/raleway-600.woff2") format("woff2"), url("../fonts/raleway-600.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/raleway-700.woff2") format("woff2"), url("../fonts/raleway-700.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/raleway-800.woff2") format("woff2"), url("../fonts/raleway-800.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/raleway-900.woff2") format("woff2"), url("../fonts/raleway-900.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/roboto-300.woff2") format("woff2"), url("../fonts/roboto-300.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/roboto-500.woff2") format("woff2"), url("../fonts/roboto-500.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/roboto-700.woff2") format("woff2"), url("../fonts/roboto-700.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+// @font-face {
+//   font-family: "Montserrat";
+//   src: url("../fonts/Montserrat-Regular.woff2") format("woff2"),
+//     url("../fonts/Montserrat-Regular.woff") format("woff");
+//   font-weight: 400;
+//   font-style: normal;
+//   font-display: swap;
+// }
+
+// @font-face {
+//   font-family: "Montserrat";
+//   src: url("../fonts/Montserrat-Bold.woff2") format("woff2"),
+//     url("../fonts/Montserrat-Bold.woff") format("woff");
+//   font-weight: 700;
+//   font-style: normal;
+//   font-display: swap;
+// }
+
+// @font-face {
+//   font-family: "Montserrat";
+//   src: url("../fonts/Montserrat-SemiBold.woff2") format("woff2"),
+//     url("../fonts/Montserrat-SemiBold.woff") format("woff");
+//   font-weight: 600;
+//   font-style: normal;
+//   font-display: swap;
+// }
+
+// @font-face {
+//   font-family: "Ukrainianbrush";
+//   src: url("../fonts/ukrainianbrush.woff2") format("woff2"),
+//     url("../fonts/ukrainianbrush.woff") format("woff");
+//   font-weight: 400;
+//   font-style: normal;
+//   font-display: swap;
+// }
+
+// @font-face {
+//   font-family: "PTSans";
+//   src: url("../fonts/PTSans-Regular.woff2") format("woff2"),
+//     url("../fonts/PTSans-Regular.woff") format("woff");
+//   font-weight: 400;
+//   font-style: normal;
+//   font-display: swap;
+// }
+
+// @font-face {
+//   font-family: "DMSans";
+//   font-weight: normal;
+//   src: url("../fonts/DMSans-Regular.woff2") format("woff2"), url("../fonts/DMSans-Regular.woff") format("woff");
+//   font-style: normal;
+//   font-display: swap;
+// }
+
+// @font-face {
+//   font-family: "DMSans";
+//   font-weight: 500;
+//   src: url("../fonts/DMSans-Medium.woff2") format("woff2"), url("../fonts/DMSans-Medium.woff") format("woff");
+//   font-style: normal;
+//   font-display: swap;
+// }
+
+// @font-face {
+//   font-family: "DMSans";
+//   font-weight: bold;
+//   src: url("../fonts/DMSans-Bold.woff2") format("woff2"), url("../fonts/DMSans-Bold.woff") format("woff");
+//   font-style: normal;
+//   font-display: swap;
+// }
+
+// @font-face {
+//   font-family: "Rubik";
+//   src: url("../fonts/RubikLight.woff2") format("woff2"), url("../fonts/RubikLight.woff") format("woff");
+//   font-weight: 300;
+//   font-style: normal;
+//   font-display: swap;
+// }
+
+// @font-face {
+//   font-family: "Rubik";
+//   src: url("../fonts/Rubik.woff2") format("woff2"), url("../fonts/Rubik.woff") format("woff");
+//   font-weight: 400;
+//   font-style: normal;
+//   font-display: swap;
+// }
+
+// @font-face {
+//   font-family: "Rubik";
+//   src: url("../fonts/Rubikmedium.woff2") format("woff2"), url("../fonts/Rubikmedium.woff") format("woff");
+//   font-weight: 500;
+//   font-style: normal;
+//   font-display: swap;
+// }
+
+// @font-face {
+//   font-family: "Rubik";
+//   src: url("../fonts/RubikBold.woff2") format("woff2"), url("../fonts/RubikBold.woff") format("woff");
+//   font-weight: 700;
+//   font-style: normal;
+//   font-display: swap;
+// }
+
+// @font-face {
+//   font-family: "Poppins";
+//   src: url("../fonts/Poppins-Bold.woff2") format("woff2"), url("../fonts/Poppins-Bold.woff") format("woff");
+//   font-weight: bold;
+//   font-style: normal;
+//   font-display: swap;
+// }
+
+// @font-face {
+//   font-family: "Nunito";
+//   src: url("../fonts/NunitoBold.woff2") format("woff2"), url("../fonts/NunitoBold.woff") format("woff");
+//   font-weight: bold;
+//   font-style: normal;
+//   font-display: swap;
+// }
+
+// @font-face {
+//   font-family: "Gilroy";
+//   src: url("../fonts/gilroyblack.woff2") format("woff2"), url("../fonts/gilroyblack.woff") format("woff");
+//   font-weight: 800;
+//   font-style: normal;
+//   font-display: swap;
+// }
+
+// @font-face {
+//   font-family: "Gilroy";
+//   src: url("../fonts/gilroy-bold.woff2") format("woff2"), url("../fonts/gilroy-bold.woff") format("woff");
+//   font-weight: 700;
+//   font-style: normal;
+//   font-display: swap;
+// }
+
+// @font-face {
+//   font-family: "Gilroy";
+//   src: url("../fonts/gilroysemibold.woff2") format("woff2"), url("../fonts/gilroysemibold.woff") format("woff");
+//   font-weight: 600;
+//   font-style: normal;
+//   font-display: swap;
+// }
+
+// @font-face {
+//   font-family: "Gilroy";
+//   src: url("../fonts/GilroyMedium.woff2") format("woff2"), url("../fonts/GilroyMedium.woff") format("woff");
+//   font-weight: 500;
+//   font-style: normal;
+//   font-display: swap;
+// }
+
+// @font-face {
+//   font-family: "Gilroy";
+//   src: url("../fonts/gilroyregular.woff2") format("woff2"), url("../fonts/gilroyregular.woff") format("woff");
+//   font-weight: 400;
+//   font-style: normal;
+//   font-display: swap;
+// }
+
+// @font-face {
+//   font-family: "Gilroy";
+//   src: url("../fonts/gilroy-ultralight.woff2") format("woff2"), url("../fonts/gilroy-ultralight.woff") format("woff");
+//   font-weight: 200;
+//   font-style: normal;
+//   font-display: swap;
+// }
+
+// @font-face {
+//   font-family: "Commissioner";
+//   src: url("../fonts/CommissionerLight.woff2") format("woff2"), url("../fonts/CommissionerLight.woff") format("woff");
+//   font-weight: 300;
+//   font-style: normal;
+//   font-display: swap;
+// }
+
+// @font-face {
+//   font-family: "Commissioner";
+//   src: url("../fonts/CommissionerRegular.woff2") format("woff2"),
+//     url("../fonts/CommissionerRegular.woff") format("woff");
+//   font-weight: 400;
+//   font-style: normal;
+//   font-display: swap;
+// }
+
+// @font-face {
+//   font-family: "Commissioner";
+//   src: url("../fonts/CommissionerMedium.woff2") format("woff2"), url("../fonts/CommissionerMedium.woff") format("woff");
+//   font-weight: 500;
+//   font-style: normal;
+//   font-display: swap;
+// }
+
+// @font-face {
+//   font-family: "Commissioner";
+//   src: url("../fonts/CommissionerSemiBold.woff2") format("woff2"),
+//     url("../fonts/CommissionerSemiBold.woff") format("woff");
+//   font-weight: 600;
+//   font-style: normal;
+//   font-display: swap;
+// }
+
+// @font-face {
+//   font-family: "Circe";
+//   src: url("../fonts/Circe-Thin.woff2") format("woff2"),
+//     url("../fonts/Circe-Thin.woff") format("woff");
+//   font-weight: 100;
+//   font-style: normal;
+//   font-display: swap;
+// }
+
+// @font-face {
+//   font-family: "Circe";
+//   src: url("../fonts/Circe-ExtraLight.woff2") format("woff2"),
+//     url("../fonts/Circe-ExtraLight.woff") format("woff");
+//   font-weight: 200;
+//   font-style: normal;
+//   font-display: swap;
+// }
+
+// @font-face {
+//   font-family: "Circe";
+//   src: url("../fonts/Circe-Light.woff2") format("woff2"),
+//     url("../fonts/Circe-Light.woff") format("woff");
+//   font-weight: 300;
+//   font-style: normal;
+//   font-display: swap;
+// }
+
+// @font-face {
+//   font-family: "Circe";
+//   src: url("../fonts/Circe-Regular.woff2") format("woff2"),
+//     url("../fonts/Circe-Regular.woff") format("woff");
+//   font-weight: 400;
+//   font-style: normal;
+//   font-display: swap;
+// }
+
+// @font-face {
+//   font-family: "Circe";
+//   src: url("../fonts/Circe-Bold.woff2") format("woff2"),
+//     url("../fonts/Circe-Bold.woff") format("woff");
+//   font-weight: 700;
+//   font-style: normal;
+//   font-display: swap;
+// }
+
+// @font-face {
+//   font-family: "Circe";
+//   src: url("../fonts/Circe-ExtraBold.woff2") format("woff2"),
+//     url("../fonts/Circe-ExtraBold.woff") format("woff");
+//   font-weight: 800;
+//   font-style: normal;
+//   font-display: swap;
+// }

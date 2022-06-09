@@ -1,0 +1,206 @@
+.about {
+  padding-bottom: 80px;
+
+  @media (max-width: 768px) {
+    padding-bottom: 50px;
+  }
+
+  @media (max-width: 576px) {
+    padding-bottom: 30px;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 38px;
+
+    @media (max-width: 1200px) {
+      padding-left: 0;
+    }
+  }
+
+  &__img-box {
+    max-width: 480px;
+    margin-right: 20px;
+    padding: 15px 0 0 15px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 235px;
+      height: 280px;
+      top: 0;
+      left: 0;
+      background-image: url(../images/ico/decoration.svg);
+    }
+
+    @media (max-width: 1200px) {
+      display: none;
+    }
+  }
+
+  &__img {
+    border-radius: 0 5px;
+    width: 440px;
+    height: 530px;
+    object-fit: cover;
+  }
+
+  &__years {
+    width: 240px;
+    background-color: rgba(32, 35, 40, 0.9);
+    padding: 18px 25px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    border-radius: 0 5px;
+    position: absolute;
+    bottom: 67px;
+    right: -25px;
+  }
+
+  &__year {
+    margin-right: 10px;
+    @extend %roboto-700;
+    font-size: 52px;
+    line-height: 1;
+  }
+
+  &__years-text {
+    font-size: 21px;
+    line-height: 1.2;
+  }
+
+  &__content {
+    max-width: 550px;
+    padding-top: 15px;
+
+    @media (max-width: 1200px) {
+      max-width: 100%;
+    }
+  }
+
+  &__undertitle {
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 1.2;
+    color: $accent;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+  }
+
+  &__title {
+    font-size: 29px;
+    font-weight: 800;
+    line-height: 1.18;
+    padding-bottom: 30px;
+    position: relative;
+    margin-bottom: 28px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 35px;
+      height: 5px;
+      left: 0;
+      bottom: 0;
+      background-image: url(../images/ico/dot-decor2.svg);
+    }
+
+    @media (max-width: 480px) {
+      font-size: 24px;
+    }
+  }
+
+  &__text {
+    line-height: 1.8;
+    margin-bottom: 45px;
+  }
+
+  &__content-bottom {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 576px) {
+      display: block;
+    }
+  }
+
+  &__bottom-box {
+    width: 265px;
+    margin-right: 20px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    @media (max-width: 1200px) {
+      width: 50%;
+    }
+
+    @media (max-width: 576px) {
+      width: 100%;
+      margin-bottom: 40px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__bottom-title {
+    font-size: 19px;
+    font-weight: 800;
+    line-height: 1.15;
+    padding: 0 0 15px 72px;
+    position: relative;
+    margin-bottom: 15px;
+    border-bottom: 1px solid $light-div;
+
+    &--wood {
+      padding-left: 57px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+
+      @media (max-width: 1200px) {
+        top: -12px;
+      }
+    }
+
+    &--eco::before {
+      width: 61px;
+      height: 49px;
+      background-image: url(../images/ico/eco.svg);
+    }
+    &--wood::before {
+      width: 41px;
+      height: 40px;
+      background-image: url(../images/ico/wood-cut.svg);
+    }
+  }
+
+  &__bottom-text {
+    line-height: 1.8;
+    margin-bottom: 10px;
+  }
+
+  &__bottom-link {
+    font-size: 15px;
+    font-weight: 800;
+    color: $text;
+    border-bottom: 1px solid $text;
+    line-height: 1;
+    transition: border-bottom 0.3s;
+
+    &:hover {
+      border-color: transparent;
+    }
+  }
+}

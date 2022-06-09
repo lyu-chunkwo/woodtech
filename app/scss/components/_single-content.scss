@@ -1,0 +1,142 @@
+.single-content {
+  margin-bottom: 70px;
+
+  @media (max-width: 576px) {
+    margin-bottom: 40px;
+  }
+
+  &__title {
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 1.16;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: 992px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__text-box {
+    margin-right: 20px;
+
+    @media (max-width: 992px) {
+      margin: 0 0 40px 0;
+    }
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 1.7;
+    max-width: 740px;
+
+    @media (max-width: 992px) {
+      max-width: 100%;
+    }
+  }
+
+  &__img-box {
+    padding: 35px 0;
+    max-width: 584px;
+
+    @media (max-width: 992px) {
+      margin: 0 auto;
+    }
+  }
+
+  &__info {
+    max-width: 360px;
+
+    @media (max-width: 992px) {
+      max-width: 100%;
+    }
+  }
+
+  &__developer-about {
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 0 30px;
+  }
+
+  &__developer-position,
+  &__info-title {
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 1.2;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+
+  &__developer-img {
+    width: 105px;
+    height: 105px;
+    margin: 0 auto;
+    border: 5px solid $light-disabled;
+    border-radius: 50pc;
+    margin-bottom: 25px;
+    position: relative;
+    z-index: 55;
+  }
+
+  &__developer-image {
+    width: 105px;
+    height: 105px;
+    object-fit: cover;
+    border-radius: 50%;
+    position: relative;
+    z-index: 0;
+  }
+
+  &__developer-name {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 15px;
+  }
+
+  &__developer-descr {
+    line-height: 1.7;
+  }
+
+  &__info-project {
+    background-color: $light-bg;
+    padding: 40px 30px;
+  }
+
+  &__info-title {
+    text-align: center;
+  }
+
+  &__info-text {
+    padding: 0;
+
+    span {
+      order: 3;
+      @extend %roboto-700;
+    }
+  }
+
+  &__info-row {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 0.5em;
+
+    &::before {
+      content: "";
+      border-bottom: 1px dotted #666;
+      flex-grow: 1;
+      order: 2;
+      margin: 5px;
+    }
+
+    @media (max-width: 992px) {
+    }
+  }
+}

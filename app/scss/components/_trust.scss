@@ -1,0 +1,117 @@
+.trust {
+  padding: 40px 80px;
+  background-color: #171a1a;
+  color: $dark-header;
+
+  @media (max-width: 1200px) {
+    padding: 40px 0;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: 1200px) {
+      display: block;
+    }
+  }
+
+  &__text {
+    max-width: 740px;
+
+    @media (max-width: 1200px) {
+      margin-bottom: 35px;
+    }
+  }
+
+  &__title {
+    font-size: 18px;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 1.8;
+    width: 220px;
+    border-bottom: 1px solid $dark-div;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+  }
+
+  &__lists {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 576px) {
+      display: block;
+    }
+  }
+
+  &__list {
+    max-width: 233px;
+    margin-right: 20px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    @media (max-width: 768px) {
+      margin-bottom: 20px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__item {
+    line-height: 2;
+
+    span {
+      @extend %roboto-700;
+      color: #6f7a8b;
+    }
+  }
+
+  &__request {
+    max-width: 310px;
+    text-align: right;
+
+    @media (max-width: 1200px) {
+      max-width: 100%;
+      text-align: left;
+    }
+  }
+
+  &__request-text {
+    line-height: 1.8;
+    margin-bottom: 10px;
+  }
+
+  &__buttons {
+    @media (max-width: 1200px) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__request-num {
+    font-size: 28px;
+    line-height: 1.65;
+    color: #fff;
+    margin-bottom: 16px;
+    display: block;
+    @extend %roboto-300;
+
+    @media (max-width: 1200px) {
+      margin-right: 25px;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 20px;
+    }
+  }
+
+  &__request-btn {
+    padding: 12px 30px;
+    font-weight: 800;
+  }
+}
